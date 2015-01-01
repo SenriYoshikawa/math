@@ -1,0 +1,526 @@
+\documentclass[twocolumn,fleqn,a4paper,10pt]{jarticle}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{emathT}
+
+\title{微分積分II冬課題} 
+\date{\today} 
+
+\hoffset = -40pt
+\voffset = -110pt
+\textwidth = 180mm
+\textheight = 275mm
+
+\begin{document}
+\setlength{\parindent}{0pt}
+\setlength{\columnseprule}{0.4pt}
+\setlength{\mathindent}{0pt}
+
+\renewcommand{\thesection}{\fbox{\arabic{section}}}
+\renewcommand{\labelenumi}{(\theenumi)}
+
+\maketitle
+
+%1
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	&\frac{x+5}{(x+2)(x-1)}=\frac{a}{x+2}+\frac{b}{x-1}\\
+	&x+5=(x-1)a+(x+2)b\\
+	&x=-2\text{とすると}a=-1\\
+	&x=1\text{とすると}b=2
+\end{flalign*}
+\item \begin{flalign*}
+	&\frac{1}{(x-3)(x-1)}=\frac{a}{x-3}+\frac{b}{x-1}\\
+	&1=(x-1)a+(x-3)b\\
+	&x=3\text{とすると}a=\frac{1}{2}\\
+	&x=1\text{とすると}b=-\frac{1}{2}
+\end{flalign*}
+\item \begin{flalign*}
+	&\frac{2x}{(x-1)(x^2+1)}=\frac{a}{x-1}+\frac{bx+c}{x^2+1}\\
+	2x&=(x^2+1)a+(x-1)(bx+c)\\
+	&x=1\text{とすると}a=1\\
+	2x&=ax^2+a+bx^2+cx-bx-c\\
+	&=(a+b)x^2+(c-b)x+a-c\\
+	&a=1\text{だから}\\
+	2x&=(1+b)x^2+(c-b)x+1-c\\
+	&\text{係数を比較して}\\
+	&a=1,b=-1,c=1
+\end{flalign*}
+\end{enumerate}
+
+%2
+\section{}
+\begin{enumerate}
+\item\begin{flalign*}
+	\text{(証明)(右辺)}&=\frac{1}{2}(1-\cos{2x})\\
+	&=\frac{1}{2}(1-\cos^2{x}+\sin^2{x})\\
+	&=\frac{1}{2}(2\sin^2{x})\\
+	&=\sin^2{x}=\text{(左辺)}
+\end{flalign*}
+\item \begin{flalign*}
+	\text{(証明)(左辺)}&=\cos^2{\frac{x}{2}}\\
+	&=\cos{x}+\sin^2{\frac{x}{2}}\\
+	&=\cos{x}+\frac{1}{2}-\frac{\cos{x}}{2}\\
+	&=\frac{1}{2}(1+\cos{x})=\text{(右辺)}
+\end{flalign*}
+\item \begin{flalign*}
+	y&=\frac{1}{2x-3}\\
+	y'&=-\frac{2}{(2x-3)^2}
+\end{flalign*}
+\end{enumerate}
+
+%3
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	\sin{2x}\cos{x}&=\frac{1}{2}(\sin{3x}+\sin{x})
+\end{flalign*}
+\item \begin{flalign*}
+	\cos{2x}\sin{3x}&=\frac{1}{2}(\sin{5x}-\sin{-x})\\
+	&=\frac{1}{2}(\sin{5x}+\sin{x})
+\end {flalign*}
+\item \begin{flalign*}
+	\cos{3x}\cos{5x}&=\frac{1}{2}(\cos{8x}+\cos{-2x})\\
+	&=\frac{1}{2}(\cos{8x}+\cos{2x})
+\end {flalign*}
+\item \begin{flalign*}
+	\sin{4x}\sin{2x}&=-\frac{1}{2}(\cos{6x}-\cos{2x})
+\end {flalign*}
+\end{enumerate}
+
+%4
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	&\lim_{x \to 3} \frac{x^2-x-6}{x^2-4x+3}\\
+	&=\lim_{x \to 3} \frac{(x-3)(x+2)}{(x-3)(x-1)}\\
+	&=\frac{5}{2}
+\end {flalign*}
+\item \begin{flalign*}
+	&\lim_{x \to 1} \frac{x^3-1}{3x^2-x-2}\\
+	&=\lim_{x \to 1} \frac{(x-1)(x^2+x+1)}{(3x+2)(x-1)}\\
+	&=\frac{3}{5}
+\end {flalign*}
+\item \begin{flalign*}
+	&\lim_{x \to \infty} \frac{2+5^x}{5^{x+1}-3^x}\\
+	&=\lim_{x \to \infty} \frac{\frac{2}{5^x}+1}{5-\frac{3^x}{5^x}}\\
+	&=\frac{1}{5}
+\end {flalign*}
+\item \begin{flalign*}
+	&\lim_{x \to 0} \frac{1-\cos{x}}{x^2}\\
+	&=\lim_{x \to 0} \frac{\sin^2{x}}{x^2} \lim_{x \to 0} \frac{1}{1+\cos{x}}\\
+	&=\frac{1}{2}
+\end {flalign*}
+\item \begin{flalign*}
+	&\lim_{x \to 2}  \frac{x-2}{\sqrt{x^2+1}-\sqrt{5}}\\
+	&=\lim_{x \to 2}  \frac{(x-2)(\sqrt{x^2+1}+\sqrt{5})}{x^2+1-5}\\
+	&=\lim_{x \to 2}  \frac{(x-2)(\sqrt{x^2+1}+\sqrt{5})}{(x-2)(x+2)}\\
+	&=\frac{\sqrt{5}}{2}
+\end {flalign*}
+\item \begin{flalign*}
+	&\lim_{x \to \infty} (\sqrt{x^2+1}-x)\\
+	&=\lim_{x \to \infty} \frac{(\sqrt{x^2+1}-x)(\sqrt{x^2+1}+x)}{(\sqrt{x^2+1}+x)}\\
+	&=\lim_{x \to \infty} \frac{1}{(\sqrt{x^2+1}+x)}\\
+	&=0
+\end {flalign*}
+\end{enumerate}
+
+%5
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	f(x)&=x^2\\
+	f'(x)&=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\\
+	&=\lim_{h \to 0} \frac{x^2+2xh+h^2-x^2}{h}\\
+	&=\lim_{h \to 0} 2xh+h^2\\
+	&=2x
+\end{flalign*}
+\item \begin{flalign*}
+	f(x)&=\sqrt{x}\\
+	f'(x)&=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\\
+	&=\lim_{h \to 0} \frac{\sqrt{x+h}-\sqrt{x}}{h}\\
+	&=\lim_{h \to 0} \frac{x+h-x}{h(\sqrt{x+h}+\sqrt{x})}\\
+	&=\frac{1}{2\sqrt{x}}
+\end {flalign*}
+\item \begin{flalign*}
+	f(x)&=\frac{1}{x}\\
+	f'(x)&=\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\\
+	&=\lim_{h \to 0} \frac{\frac{1}{x+h}-\frac{1}{x}}{h}\\
+	&=\lim_{h \to 0} \frac{x-(x+h)}{hx(x+h)}\\
+	&=\lim_{h \to 0} \frac{-h}{hx(x+h)}\\
+	&=-\frac{1}{x^2}
+\end {flalign*}
+\end{enumerate}
+
+%6
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	y&=(5x+3)^7\\
+	y'&=35(5x+3)^6
+\end{flalign*}
+\item \begin{flalign*}
+	y&=(x^2+3)^7\\
+	y'&=14x(x^2+3)^6
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\sqrt{4x+3}\\
+	y'&=\frac{2}{\sqrt{4x+3}}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\sqrt[3]{6x+1}\\
+	y'&=\frac{2}{\sqrt[3]{6x+1}^2}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\frac{4x-3}{x+1}\\
+	y'&=\frac{4(x+1)-(4x-3)}{(x+1)^2}\\
+	&=\frac{7}{(x+1)^2}
+\end {flalign*}
+\item \begin{flalign*}
+	x&=\frac{1}{2t^2-1}\\
+	x'&=-\frac{4t}{(2t^2-1)^2}
+\end {flalign*}
+\item \begin{flalign*}
+	x&=\frac{t}{(1-t)^2}\\
+	x'&=\frac{(1-t)^2-t(-2(1-t))}{(1-t)^4}\\
+	&=\frac{(1-t)+2t}{(1-t)^3}\\
+	&=\frac{1+t}{(1-t)^3}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\cos{\frac{t}{2}}\\
+	y'&=-\frac{1}{2}\sin{\frac{t}{2}}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\sin^4{x}\\
+	y'&=4\sin^3{x}\cos{x}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\cos^3{5x}\\
+	y'&=-15\cos^2{5x}\sin{5x}
+\end {flalign*}
+
+\end{enumerate}
+
+%7
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	y&=e^{3x}\sin{2x}\\
+	y'&=3e^{3x}\sin{2x}+e^{3x}2\cos{2x}\\
+	&=(3\sin{2x}+2\cos{2x})e^{3x}
+\end{flalign*}
+\item \begin{flalign*}
+	y&=e^{-x}\cos{4x}\\
+	y'&=-e^{-x}\cos{4x}-4e^{-x}\sin{4x}\\
+	&=(-\cos{4x}-4\sin{4x})e^{-x}
+\end {flalign*}
+\item \begin{flalign*}
+	v&=\frac{\log{u}}{u}\\
+	v'&=\frac{\frac{1}{u} \cdot u-\log{u}}{u^2}\\
+	&=\frac{1-\log{u}}{u^2}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\log{(x^2+3x+1)}\\
+	y'&=\frac{2x+3}{x^2+3x-1}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\log{\left|\frac{1+x}{1-x}\right|}\\
+	y'&=\frac{\frac{(1-x)+(1+x)}{(1-x)^2}}{\frac{1+x}{1-x}}\\
+	&=\frac{2}{(1+x)(1-x)}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=e^{\sin{2x}}\\
+	y'&=2\cos{2x}e^{\sin{2x}}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=(e^{2t}+e{-2t})^4\\
+	y'&=4(e^{2t}+e{-2t})^3(2e^{2t}-2e^{-2t})\\
+	&=8(e^{2t}+e{-2t})^3(e^{2t}-e^{-2t})
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\tan^{-1}{2x}\\
+	y'&=\frac{2}{1+4x^2}
+\end {flalign*}
+\item \begin{flalign*}
+	y&=\sin^{-1}{\frac{3}{x}}\\
+	y'&=\frac{\frac{1}{3}}{\sqrt{1-\frac{x^2}{9}}}\\
+	&=\frac{1}{\sqrt{9-x^2}}
+\end {flalign*}
+\item \begin{flalign*}
+	x&=\tan^{-1}{\frac{2}{u}}\\
+	x'&=\frac{-\frac{2}{u^2}}{1+\frac{4}{u^2}}\\
+	&=\frac{-2}{u^2+4}
+\end {flalign*}
+
+\end{enumerate}
+
+%8
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	&y=x^2+2x-1\\
+	&y'=2x+2\\
+	&x=1\text{の時}y=2\text{で傾き}y'=4\\
+	&\therefore y-2=4(x-1)\\
+	&y=4x-2
+\end{flalign*}
+\item \begin{flalign*}
+	&y=\frac{1}{x}\\
+	&y'=-\frac{1}{x^2}\\
+	&x=2\text{の時}y=\frac{1}{2}\text{で傾き}y'=-\frac{1}{4}\\	
+	&\therefore y-\frac{1}{2}=-\frac{1}{4}(x-2)\\
+	&y=-\frac{1}{4}x+1
+\end {flalign*}
+\item \begin{flalign*}
+	&y=x^2\\
+	&y'=2x\\
+	&x=-1\text{の時}y=1\text{，}y'=-2\text{なので傾き}m=\frac{1}{2}\\
+	&\therefore y-1=\frac{1}{2}(x+1)\\
+	&y=\frac{1}{2}x+\frac{3}{2}
+\end {flalign*}
+\end{enumerate}
+
+%9
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}=-\frac{\cos{t}}{\sin{t}}=-\cot{t}
+\end{flalign*}
+\item \begin{flalign*}
+	\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}=\frac{\sin{t}}{1-\cos{t}}
+\end {flalign*}
+\item \begin{flalign*}
+	\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}=\frac{3\sin^2{t}\cos{t}}{-3\cos^2{t}\sin{t}}=-\tan{t}
+\end {flalign*}
+\end{enumerate}
+
+%10
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	y=x^3-5x^2+3x\\
+	y'=3x^2-10x+3\\
+	=(3x-1)(x-3)\\
+	y'=0\text{を解くと}x=\frac{1}{3}\text{，}3\\
+	\begin{array}{c||c|c|c|c|c}\hline
+		x	&\cdots&\frac{1}{3}&\cdots&3&\cdots\\			\hline
+		y'	&+&0&-&0&+\\				   				\hline
+		y	&\nearrow&\frac{13}{27}&\searrow&-9&\nearrow\\	\hline
+	\end{array}
+	\\\therefore x=\frac{1}{3}\text{の時極大値}y=\frac{13}{27}\\
+	x=3\text{の時極小値}y=-9
+\end{flalign*}
+\item \begin{flalign*}
+	y=x\log{x}\\
+	y'=\log{x}+1\\
+	y'=0\text{を解くと}x=\frac{1}{e}\\
+	\begin{array}{c||c|c|c|c}\hline
+		x	&0&\cdots&\frac{1}{e}&\cdots\\				\hline
+		y'	&\emTsya&-&0&+\\				   		\hline
+		y	&\emTsya&\searrow&-\frac{1}{e}&\nearrow\\	\hline
+	\end{array}
+	\\\therefore x=-\frac{1}{e}\text{の時極小値}y=-\frac{1}{e}\\
+\end {flalign*}
+\end{enumerate}
+
+%11
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	y=x^3-3x\\
+	y'=3x^2-3\\
+	y'=0\text{を解くと}x=\pm1\\
+	\begin{array}{c||c|c|c|c|c}\hline
+		x	&-2&\cdots&-1&\cdots&0\\	\hline
+		y'	&9&+&0&-&-3\\				\hline
+		y	&-2&\nearrow&2&\searrow&0\\	\hline
+	\end{array}
+	\\\therefore x=-2\text{の時最小値}y=-2\\
+	x=-1\text{の時最大値}y=2
+\end{flalign*}
+\item \begin{flalign*}
+	y=xe^{-x}\\
+	y'=e^{-x}-xe^{-x}\\
+	y'=0\text{を解くと}x=1\\
+	\begin{array}{c||c|c|c|c|c}\hline
+		x	&0&\cdots&1&\cdots&2\\						\hline
+		y'	&1&+&0&-&-\frac{1}{e^2}\\						\hline
+		y	&0&\nearrow&\frac{1}{e}&\searrow&\frac{2}{e^2}\\	\hline
+	\end{array}
+	\\\therefore x=0\text{の時最小値}y=0\\
+	x=1\text{の時最大値}y=\frac{1}{e}
+\end {flalign*}
+\item \begin{flalign*}
+	y=x-2\sin{x}\\
+	y'=1-2\cos{x}\\
+	y'=0\text{を解くと}x=\frac{\pi}{3},\frac{5\pi}{3}\\
+	\begin{array}{c||c|c|c|c|c|c|c}\hline
+		x	&0&\cdots&\frac{\pi}{3}&\cdots&\frac{5\pi}{3}&\cdots&2\pi\\						\hline
+		y'	&-1&-&0&+&0&-&-1\\															\hline
+		y	&0&\searrow&\frac{\pi}{3}-\sqrt{3}&\nearrow&\frac{5\pi}{3}-\sqrt{3}&\searrow&2\pi\\	\hline
+	\end{array}
+	\\\therefore x=\frac{\pi}{3}\text{の時最小値}y=\frac{\pi}{3}-\sqrt{3}\\
+	x=\frac{5\pi}{3}\text{の時最大値}y=\frac{5\pi}{3}-\sqrt{3}
+\end {flalign*}
+\end{enumerate}
+
+%12
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	y&=x^4-2x^3\\
+	y'&=4x^3-6x^2\\
+	&=2x^2(2x-3)\\
+	&y'=0\text{を解くと}x=\frac{3}{2},0\\
+	y''&=12x^2-12x\\
+	&=12x(x-1)\\
+	&y''=0\text{を解くと}x=1,0\\
+	&\begin{array}{c||c|c|c|c|c|c|c}\hline
+		x	&\cdots&0&\cdots&1&\cdots&\frac{3}{2}&\cdots\\	\hline
+		y'	&-&0&-&-&-&0&+\\							\hline
+		y''	&+&0&-&0&+&+&+\\							\hline
+		y	&\SEE&0&\SES&-1&\SEE&\-\frac{27}{16}&\NEN\\\hline
+	\end{array}
+	\\\therefore &\text{変曲点}(0,0),(1,-1)
+\end{flalign*}
+\item \begin{flalign*}
+	y&=\frac{1}{x^2+1}\\
+	y'&=-\frac{2x}{(x^2+1)^2}\\
+	&y'=0\text{を解くと}x=0\\
+	y''&=\frac{-2(x^2+1)^2+8x^2(x^2+1)}{(x^2+1)^4}\\
+	&=\frac{6x^2-2}{(x^2+1)^3}\\
+	&y''=0\text{を解くと}x=\pm\frac{1}{\sqrt{3}}\\
+	&\begin{array}{c||c|c|c|c|c|c|c}\hline
+		x	&\cdots&-\frac{1}{\sqrt{3}}&\cdots&0&\cdots&\frac{1}{\sqrt{3}}&\cdots\\	\hline
+		y'	&+&+&+&0&-&-&-\\												\hline
+		y''	&+&0&-&-&-&0&+\\												\hline
+		y	&\NEN&\frac{3}{4}&\NEE&1&\SES&\frac{3}{4}&\SEE\\					\hline
+	\end{array}
+	\\\therefore &\text{変曲点}(-\frac{1}{\sqrt{3}},\frac{3}{4}),(\frac{1}{\sqrt{3}},\frac{3}{4})
+\end {flalign*}
+\item \begin{flalign*}
+	y&=x^4-4x^3+6x^2\\
+	y'&=4x^3-12x^2+12x\\
+	&y'=0\text{を解くと}x=0\\	
+	y''&=12x^2-24x+12\\
+	&=12(x-1)^2\\
+	&y''=0\text{を解くと}x=1\\
+	&\begin{array}{c||c|c|c|c|c|c|c}\hline
+		x	&\cdots&-\frac{1}{\sqrt{3}}&\cdots&0&\cdots&\frac{1}{\sqrt{3}}&\cdots\\	\hline
+		y'	&+&+&+&0&-&-&-\\												\hline
+		y''	&+&0&-&-&-&0&+\\												\hline
+		y	&\NEN&\frac{3}{4}&\NEE&1&\SES&\frac{3}{4}&\SEE\\					\hline
+	\end{array}
+	\\\therefore &\text{変曲点}(-\frac{1}{\sqrt{3}},\frac{3}{4}),(\frac{1}{\sqrt{3}},\frac{3}{4})
+\end {flalign*}
+\item \begin{flalign*}
+	y&=x^{\sqrt{x}}\\
+	\frac{y'}{y}&=(\sqrt{x}\log{x})'\\
+	&=\frac{1}{2\sqrt{x}}\log{x}+\sqrt{x}\frac{1}{x}\\
+	&=\frac{1}{2\sqrt{x}}(\log{x}\,+2)\\
+	y'&=\frac{1}{2\sqrt{x}}(\log{x}\,+2)x^{\sqrt{x}}\\
+	&\begin{array}{c||c|c|c|c|c}\hline
+		x	&\cdots&0&\cdots&1&\cdots\\	\hline
+		y'	&-&0&+&+&+\\				\hline
+		y''	&+&+&+&0&+\\				\hline
+		y	&\SEE&0&\NEN&3&\NEN \\	\hline
+	\end{array}
+	\\\therefore &\text{変曲点なし}
+\end {flalign*}
+\end{enumerate}
+
+%13
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	\int(3x+2)^4dx\\
+	=\frac{(3x+2)^5}{15}
+\end{flalign*}
+\item \begin{flalign*}
+	\int \frac{1}{\sqrt[3]{x}}dx\\
+	=\frac{3}{2}\sqrt[3]{x}^2	
+\end {flalign*}
+\item \begin{flalign*}
+	\int \frac{1}{1-2x}dx\\
+	=-\frac{1}{2}\log{|1-2x|}
+\end {flalign*}
+\item \begin{flalign*}
+	\int (\cos{2x}+\sin{3x})dx\\
+	=\frac{1}{2}sin{2x}-\frac{1}{3}\cos{3x}
+\end {flalign*}
+\item \begin{flalign*}
+	\int \frac{e^{4x}+e^x}{e^{2x}}dx\\
+	=\int (e^{2x}+e^{-x})dx\\
+	=\frac{1}{2}e^{2x}-e^{-x}
+\end {flalign*}
+\item \begin{flalign*}
+	\int \frac{1}{4+x^2}\\
+	=\frac{1}{2}\tan^{-1}\frac{x}{2}
+\end {flalign*}
+\item \begin{flalign*}
+	\int \frac{dt}{\sqrt{9-t^2}}\\
+	=\sin^{-1}\frac{t}{3}
+\end {flalign*}
+\item \begin{flalign*}
+	t=\sqrt{x+1}\\
+	dt=\frac{dx}{2\sqrt{x+1}}=\frac{dx}{2t}\\
+	\int x \sqrt{x+1}dx\\
+	=\int (t^2-1)t 2tdt\\
+	=\int (2t^4-2t^2)dt\\
+	=\frac{2}{5}t^5-\frac{2}{3}t^3\\
+	=\frac{2}{15}t^3(3t^2-5)\\
+	=\frac{2}{15}\sqrt{x+1}^3(3x-2)
+\end {flalign*}
+\item \begin{flalign*}
+	t=x^2+3\\
+	dt=2xdx\\
+	\int x\sqrt{x^2+3}dx\\
+	=\int \sqrt{t}x\frac{dt}{2x}\\
+	=\frac{1}{2}\int \sqrt{t}dt\\
+	=\frac{1}{3}\sqrt{(x^2+3)}^3
+\end {flalign*}
+\item \begin{flalign*}
+	\int \frac{x}{x^2+1}dx\\
+	=\frac{1}{2}\int\frac{(x^2+1)'}{x^2+1}dx\\
+	=\frac{1}{2}\log{|x^2+1|}
+\end {flalign*}
+\item \begin{flalign*}
+	t=\log{x}\\
+	dt=\frac{1}{x}dx\\
+	\int \frac{1}{x\log{x}}dx\\
+	=\int \frac{1}{x t}xdt\\
+	=\log{t}\\
+	=\log{|\log{x}|}
+\end {flalign*}
+\item \begin{flalign*}
+	\int x\cos{x}dx\\
+	=x\sin{x}-\int \sin{x} dx\\
+	=x\sin{x}+\cos{x}
+\end {flalign*}
+\item \begin{flalign*}
+	\int x\sin{x}dx\\
+	=-x\cos{x}-\int-\cos{x}\\
+	=-x\cos{x}+\sin{x}
+\end {flalign*}
+\item \begin{flalign*}
+	\int xe^xdx
+	=xe^x-\int e^xdx\\
+	=xe^x-e^x\\
+	=(x-1)e^x
+\end {flalign*}
+\item \begin{flalign*}
+	\int \log{x}dx\\
+	=x\log{x}- \int x \frac{1}{x} dx\\
+	=x\log{x}-x
+\end {flalign*}
+\item \begin{flalign*}
+	I&=\int e^x\cos{x}dx\\
+	I&=e^x\sin{x}-\int e^x\sin{x}dx\\
+	&=e^x\sin{x}-(-e^x\cos{x}-\int e^x\cos{x}dx)\\
+	&=e^x\sin{x}+e^x\cos{x}-\int e^x\cos{x}dx\\
+	2I&=e^x\sin{x}+e^x\cos{x}\\
+	I&=\frac{1}{2}e^x(\sin{x}+\cos{x})
+\end {flalign*}
+\end{enumerate}
+\end{document}

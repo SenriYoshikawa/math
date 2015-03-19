@@ -1,0 +1,50 @@
+\documentclass[twocolumn,fleqn,a4paper,10pt]{jarticle}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{graphicx}
+
+\title{微分積分II春課題} 
+\date{\today} 
+
+\hoffset = -40pt
+\voffset = -110pt
+\textwidth = 180mm
+\textheight = 275mm
+
+\begin{document}
+\setlength{\parindent}{0pt}
+\setlength{\columnseprule}{0.4pt}
+\setlength{\mathindent}{0pt}
+
+\renewcommand{\thesection}{\fbox{\arabic{section}}}
+\renewcommand{\labelenumi}{(\theenumi)}
+
+\maketitle
+
+%1
+\section{}
+\begin{enumerate}
+\item \begin{flalign*}
+	&\frac{x+5}{(x+2)(x-1)}=\frac{a}{x+2}+\frac{b}{x-1}\\
+	&x+5=(x-1)a+(x+2)b\\
+	&x=-2\text{とすると}a=-1\\
+	&x=1\text{とすると}b=2
+\end{flalign*}
+\item \begin{flalign*}
+	&\frac{1}{(x-3)(x-1)}=\frac{a}{x-3}+\frac{b}{x-1}\\
+	&1=(x-1)a+(x-3)b\\
+	&x=3\text{とすると}a=\frac{1}{2}\\
+	&x=1\text{とすると}b=-\frac{1}{2}
+\end{flalign*}
+\item \begin{flalign*}
+	&\frac{2x}{(x-1)(x^2+1)}=\frac{a}{x-1}+\frac{bx+c}{x^2+1}\\
+	2x&=(x^2+1)a+(x-1)(bx+c)\\
+	&x=1\text{とすると}a=1\\
+	2x&=ax^2+a+bx^2+cx-bx-c\\
+	&=(a+b)x^2+(c-b)x+a-c\\
+	&a=1\text{だから}\\
+	2x&=(1+b)x^2+(c-b)x+1-c\\
+	&\text{係数を比較して}\\
+	&a=1,b=-1,c=1
+\end{flalign*}
+\end{enumerate}
+\end{document}

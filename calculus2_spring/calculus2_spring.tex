@@ -1,6 +1,7 @@
 \documentclass[twocolumn,fleqn,a4paper,10pt]{jarticle}
 \usepackage{amsmath,amssymb}
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{emathT}
 
 \title{微分積分II春課題} 
 \date{\today} 
@@ -343,18 +344,18 @@
 \section{}
 \begin{flalign*}
 	y=x^4-2x^2+1\\
-	y'=4x^3-4x\ y'=0\text{を解くと} x=0,1\\
+	y'=4x^3-4x\ y'=0\text{を解くと} x=0,\pm1\\
 	y''=12x^2-4 \ y''=0\text{を解くと} x=\pm\frac{1}{\sqrt{3}}\\
-	\begin{array}{c||c|c|c|c|c|c|c}\hline
-		x	&\cdots &0&\cdots &1&\cdots &\frac{3}{2}&\cdots\\	\hline
-		y'	&-&0&-&-&-&0&+\\							\hline
-		y''	&+&0&-&0&+&+&+\\							\hline
-		y	&\SEE & 0 &\SES&-1 &\SEE&\-\frac{27}{16}&\NEN\\\hline
+	\begin{array}{c||c|c|c|c|c|c|c|c|c|c|c}\hline
+		x	&\cdots &-1 &\cdots &-\frac{1}{\sqrt{3}} &\cdots & 0 &\cdots & \frac{1}{\sqrt{3}} & \cdots & 1 &\cdots\\\hline
+		y'	&-&0&+&+&+&0&-&-&-&0&+\\									\hline
+		y''	&+&+&+&0&-&-&-&0&+&+&+\\									\hline
+		y	&\SEE & 0 &\NEN& \frac{4}{9} & \NEE & 1 & \SES &  \frac{4}{9} & \SEE & 0 & \NEN	\\\hline
 	\end{array}
-	\\\therefore \text{変曲点}(0,0),(1,-1)
+	\\\therefore \text{変曲点}(\pm\frac{1}{\sqrt{3}},\frac{4}{9})
 \end{flalign*}
 
-%13
+%15
 \section{}
 \begin{flalign*}
 \end{flalign*}

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2015.3.19)  24 MAR 2015 09:55
+This is e-pTeX, Version 3.14159265-p3.5-130605-2.6 (utf8.euc) (TeX Live 2014/Arch Linux) (preloaded format=platex 2015.3.19)  24 MAR 2015 20:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -127,30 +127,179 @@ eX Live/ChoF)
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
 )
+(/usr/share/texmf-dist/tex/platex/misc/emath/emathT.sty
+Package: emathT 2005/10/29 v0.42
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen133
+\extrarowheight=\dimen134
+\NC@list=\toks21
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(/usr/share/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 1994/05/23 v2.03 Table rule package (DPC)
+)
+(/usr/share/texmf-dist/tex/platex/misc/emath/emathPh.sty
+Package: emathPh 2005/11/03 v 2.46
+
+(/usr/share/texmf-dist/tex/platex/misc/etc/epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count103
+\d@lta=\count104
+\@delta=\dimen135
+\@@delta=\dimen136
+\@gridcnt=\count105
+\@joinkind=\count106
+\@dotgap=\dimen137
+\@ddotgap=\dimen138
+\@x@diff=\count107
+\@y@diff=\count108
+\x@diff=\dimen139
+\y@diff=\dimen140
+\@dotbox=\box43
+\num@segments=\count109
+\num@segmentsi=\count110
+\@datafile=\read1
+) (/usr/share/texmf-dist/tex/platex/misc/etc/eepic.sty
+Extension to Epic and LaTeX. Version 1.1b - Released Febrary 7, 1988
+\@gphlinewidth=\count111
+\@eepictcnt=\count112
+\@tempdimc=\dimen141
+\maxovaldiam=\dimen142
+\@filltype=\box44
+) (/usr/share/texmf-dist/tex/platex/misc/etc/eclarith.sty
+eclarith.sty 1.1 --- July 1, 1992
+\ari!A=\dimen143
+\ari!B=\dimen144
+\ari!C=\count113
+\ari!D=\count114
+) (/usr/share/texmf-dist/tex/platex/misc/emath/emath.sty
+Package: emath 2005/10/31 v1.54p 初等数学マクロパッケージ
+
+(/usr/share/texmf-dist/tex/platex/misc/emath/emath2e.sty
+(/usr/share/texmf-dist/tex/platex/misc/emath/emathE.sty
+Package: emathE 2005/09/05 v0.79 拡張enumerate
+
+(/usr/share/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks22
+)
+(/usr/share/texmf-dist/tex/platex/misc/emath/emathEc.sty
+Package: emathEc 2005/09/05 v0.00
+
+(/usr/share/texmf-dist/tex/platex/misc/emath/emathC.sty
+Package: emathC 2005/09/03 v0.25
+
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count115
+\calc@Bcount=\count116
+\calc@Adimen=\dimen145
+\calc@Bdimen=\dimen146
+\calc@Askip=\skip48
+\calc@Bskip=\skip49
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count117
+\calc@Cskip=\skip50
+)
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tempcnta=\count118
+\templa=\dimen147
+\emath@toks@=\toks23
+\Sett@width=\dimen148
+\EMcalc@A=\dimen149
+))
+(/usr/share/texmf-dist/tex/platex/misc/emath/jquote.sty
+Package: jquote 2005/10/31 v0.01
+)
+(/usr/share/texmf-dist/tex/platex/misc/emath/emathK.sty)
+\kizami@ti=\count119
+\syoki@ti=\count120
+\c@Enumi=\count121
+\c@Enumii=\count122
+\c@Enumiii=\count123
+\c@Enumiv=\count124
+\emtokena=\toks24
+))
+\templb=\dimen150
+\templc=\dimen151
+\tempboxa=\box45
+\tempboxb=\box46
+\EMc@hizyosuu=\count125
+\EMc@syou=\count126
+\EMc@zyo@amari=\count127
+\GCM=\count128
+\zyo@@c=\count129
+\hizyo@@c=\count130
+\wari@@cnt=\count131
+\wari@@cmax=\count132
+\gyou@@c=\count133
+\hidari@@p=\count134
+\migi@@p=\count135
+\renritu@hidariyohaku=\dimen152
+\@ltxlinelen=\dimen153
+\fileophndl=\read2
+)
+(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 137.
+
+(/usr/share/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+)
+(/usr/share/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+))
+\@tempdimd=\dimen154
+LaTeX Info: Redefining \color on input line 203.
+\DHS@seq=\toks25
+\yasen@toks=\toks26
+\tenretu@namae=\toks27
+\namae@opt=\toks28
+\@tmpla=\dimen155
+)
+\hyouretuhaba=\dimen156
+\emT@w=\dimen157
+\emT@h=\dimen158
+\emT@@h=\dimen159
+\emT@d=\dimen160
+\emT@@d=\dimen161
+\emT@r=\dimen162
+\arrayrulewidthb=\dimen163
+)
 (./calculus2_spring.aux)
 \openout1 = `calculus2_spring.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -159,109 +308,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 24.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 25.
 [1
 
 
 ] [2] [3]
-! Undefined control sequence.
-<argument> ...y'' &+&0&-&0&+&+&+\\ \hline y &\SEE 
-                                                  & 0 &\SES &-1 &\SEE &\-\fr...
-l.355 \end{flalign*}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \hbox (18.11992pt too wide) in paragraph at lines 356--356
+[] 
+ []
 
-! Undefined control sequence.
-<argument> ...&0&+&+&+\\ \hline y &\SEE & 0 &\SES 
-                                                  &-1 &\SEE &\-\frac {27}{16...
-l.355 \end{flalign*}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... \hline y &\SEE & 0 &\SES &-1 &\SEE 
-                                                  &\-\frac {27}{16}&\NEN \\\...
-l.355 \end{flalign*}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...ES &-1 &\SEE &\-\frac {27}{16}&\NEN 
-                                                  \\\hline \end {array} 
-l.355 \end{flalign*}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...y'' &+&0&-&0&+&+&+\\ \hline y &\SEE 
-                                                  & 0 &\SES &-1 &\SEE &\-\fr...
-l.355 \end{flalign*}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...&0&+&+&+\\ \hline y &\SEE & 0 &\SES 
-                                                  &-1 &\SEE &\-\frac {27}{16...
-l.355 \end{flalign*}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... \hline y &\SEE & 0 &\SES &-1 &\SEE 
-                                                  &\-\frac {27}{16}&\NEN \\\...
-l.355 \end{flalign*}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...ES &-1 &\SEE &\-\frac {27}{16}&\NEN 
-                                                  \\\hline \end {array} 
-l.355 \end{flalign*}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[4] [5] (./calculus2_spring.aux) ) 
+[4]
+File: 14-1.svg Graphic file (type eps)
+ <14-1.svg> [5] (./calculus2_spring.aux) ) 
 Here is how much of TeX's memory you used:
- 1521 strings out of 493800
- 17238 string characters out of 6156126
- 97844 words of memory out of 5000000
- 5001 multiletter control sequences out of 15000+600000
+ 5496 strings out of 493800
+ 56034 string characters out of 6156126
+ 198085 words of memory out of 5000000
+ 8911 multiletter control sequences out of 15000+600000
  16709 words of font info for 68 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,13n,26p,512b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,18n,40p,515b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on calculus2_spring.dvi (5 pages, 24836 bytes).
+Output written on calculus2_spring.dvi (5 pages, 37816 bytes).

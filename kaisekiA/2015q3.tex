@@ -1,0 +1,203 @@
+\documentclass[a4paper,10pt]{jarticle}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{emathT}
+
+\title{解析学Ａ後期中間試験} 
+\date{\today} 
+
+\hoffset = -40pt
+\voffset = -110pt
+\textwidth = 180mm
+\textheight = 275mm
+
+\begin{document}
+\setlength{\parindent}{0pt}
+\setlength{\columnseprule}{0.4pt}
+
+\renewcommand{\thesection}{\fbox{\arabic{section}}}
+\renewcommand{\labelenumi}{(\theenumi)}
+
+\maketitle
+
+%1
+\section{次の極限を求めよ}
+\begin{enumerate}
+\item $\displaystyle \lim_{(x,y) \to (0,0)} = \frac{xy^2}{x^2+y^2}$\begin{gather*}
+	x = r \cos\theta \quad y = r \sin\theta \text{とおけば} (x,y) \to (0,0) \text{であることは} r \to 0 \text{と同義である}\\
+	\frac{xy^2}{x^2+y^2} = \frac{r\cos\theta \cdot r^2\sin^2\theta}{r^2 \cos^2\theta + r^2\sin^2\theta} \\
+	=\frac{r\cos\theta\sin^2\theta}{\cos^2\theta+\sin^2\theta} \\
+	=r\cos\theta\sin^2\theta\\
+	=0 \  as \ r \to 0
+\end{gather*}
+\item $\displaystyle \lim_{(x,y) \to (0,0)} = \frac{x+y}{\sqrt{x^2+y^2}}$\begin{gather*}
+	x\text{軸正の向きでは, }(x, y) = (x, 0) \text{,} \sqrt{x^2 + 0^2} = |x| = x \text{だから} \\
+	\frac{x+y}{\sqrt{x^2+y^2}} = \frac{x}{\sqrt{x^2}} = \frac{x}{x} \to 1 \ as \ (x,y) \to (0,0) \\
+	x\text{軸負の向きでは, }(x, y) = (0, y) \text{,} \sqrt{x^2 + y^2} = |x| = -x \text{だから} \\
+	\frac{x+y}{\sqrt{x^2+y^2}} = \frac{x}{\sqrt{x^2}} = \frac{x}{-x} \to -1 \ as \ (x,y) \to (0,0) \\
+	(x,y)\text{の近づけ方により極限がことなる、つまり極限は存在しない}
+\end{gather*}
+\end{enumerate}
+
+%2
+\section{次のヤコビ行列を求めよ}
+\begin{enumerate}
+\item$f(x,y) = \sqrt{2x+3y}$ \begin{gather*}
+	z = \sqrt{2x+3y} \\
+	\frac{\partial z}{\partial(x,y)} = \frac{1}{2\sqrt{2x+3y}}(2 \ \ 3)
+\end{gather*}
+\item $f(x,y) = \cfrac{x-y}{x+y}$ \begin{gather*}
+	z = \frac{x-y}{x+y}\\
+	\frac{\partial z}{\partial(x,y)} =\frac{1}{(x+y)^2}\big( (x+y)-(x-y) \ \ -(x+y)-(x-y)\big) \\
+	=\frac{1}{(x+y)^2}\big( 2y \ \ -2x\big)
+\end{gather*}
+\end{enumerate}
+
+%3
+\section{}
+\begin{enumerate}
+\item $z = g(x,y) = x^2y^2$\begin{gather*}
+ 	\left(    \begin{array}{r}
+		x \\
+		y \\
+	\end{array}  \right)
+	= f(t) = 
+ 	\left(    \begin{array}{r}
+		t+e^t \\
+		t-e^t \\
+	\end{array}  \right)
+	\text{のとき}\frac{\partial z}{\partial t}\text{を求めよ} \\
+	\frac{\partial z}{\partial t} = \frac{\partial z}{\partial(x,y)} \cdot \frac{\partial(x,y)}{\partial t} \\
+	=\big(2xy^2 \ \ 2x^2y\big) 
+ 	\left(    \begin{array}{r}
+		1+e^t \\
+		1-e^t \\
+	\end{array}  \right) \\
+	= 2\{xy^2(1+e^t) + 2x^2y(1-e^t)\}
+\end{gather*}
+\item$ z = g(x,y) = \log(xy) $\begin{gather*}
+ 	\left(    \begin{array}{r}
+		x \\
+		y \\
+	\end{array}  \right)
+	= f(t) = 
+ 	\left(    \begin{array}{r}
+		u^2+v^2 \\
+		2uv \\	\end{array}  \right)
+	\text{のとき}(g \circ f)' (u,v) = \frac{\partial z}{\partial(u,v)}\text{を求めよ} \\
+	\frac{\partial z}{\partial(u,v)} = \frac{\partial z}{\partial(x,y)} \cdot \frac{\partial(x,y)}{\partial(u,v)}\\
+	=\left(\frac{1}{x}\ \ \frac{1}{y}\right)
+	\left(    \begin{array}{rr}
+		2u \ \ 2v \\
+		2v \ \ 2u \\
+	\end{array}  \right) \\
+	=\frac{2}{xy}\left(y\ \ x\right)
+	\left(    \begin{array}{rr}
+		u \ \ v \\
+		v \ \ u \\
+	\end{array}  \right) \\
+	=\frac{2}{xy}\left(uy+vx\ \ vy+ux\right)
+\end{gather*}
+\end{enumerate}
+
+%4
+\section{ヤコビ行列とヘッセ行列を求めよ}
+\begin{enumerate}
+\item $z = f(x,y) = (x+y)^2-2(x^4+y^4)$\begin{gather*}
+	f'(x,y) = 2(x+y) [1 \ \ 1]-2 \cdot 4 [x^3 \ \ y^3] \\
+	=2[x+y-4x^3 \ \ x+y-4y^3] \\
+	f''(x,y) = 2
+	\left[    \begin{array}{cc}
+		1-12x^2 & 1 \\
+		1 &  1-12y^2\\
+	\end{array}  \right] \\
+\end{gather*}
+\item$ z = f(x,y) = e^{-x^2-y^2}$\begin{gather*}
+	f'(x,y) = e^{x^2-y^2} [-2x \ \ -2y] \\
+	= -2e^{x^2-y^2} [x \ \ y] \\
+	f''(x,y) = 
+	\left[    \begin{array}{c}
+		x \\
+		y \\
+	\end{array}  \right] 
+	-2e^{x^2-y^2} [-2x \ \ -2y] -2e^{x^2-y^2}
+	\left[    \begin{array}{cc}
+		1 & 0 \\
+		0 &  1\\
+	\end{array}  \right] \\
+	= -2e^{x^2-y^2} \left\{
+	\left[    \begin{array}{cc}
+		-2x^2 & -2xy \\
+		-2xy &  -2y^2\\
+	\end{array}  \right] +
+	\left[    \begin{array}{cc}
+		1 & 0 \\
+		0 &  1\\
+	\end{array}  \right] 
+	\right\} \\
+	= -2e^{x^2-y^2}
+	\left[    \begin{array}{cc}
+		1-2x^2 & -2xy \\
+		-2xy &  1-2y^2\\
+	\end{array} \right] 
+\end{gather*}
+\end{enumerate}
+
+
+%5
+\section{$f(x,y) = (x-y)^3-8xy=0$によって定まる曲線$C$について}
+\begin{enumerate}
+\item 点$A(2\sqrt{3}+2,2\sqrt{3}-2)$が$C$上にあることを確かめよ\begin{gather*}
+	x-y=2\sqrt{3}+2 + 2\sqrt{3}-2 = 4\\
+	xy = (2\sqrt{3}+2) \cdot (2\sqrt{3}-2) = 12 - 4 = 8\\
+	(x-y)^3-8xy = 4^3 - 8 \cdot 8 = 64 - 64 = 0 \\
+	\therefore \text{点}A\text{は}C\text{上にある}
+\end{gather*}
+\item 点$A$における$C$の接線の方程式を求めよ\begin{gather*}
+	F = (x-y)^3-8xy\text{とすれば}\\
+	F_x = 3(x-y)^2-8y \hspace{1cm} F_y= -3(x-y)^2-8x \\
+	F_y \neq 0 \text{だから} \\
+	\frac{dy}{dx} = \frac{3(x-y)^2-8y}{3(x-y)^2+8x}\\
+	\text{点$A$の値を代入して} \\
+	\frac{F_x(2\sqrt{3}+2,2\sqrt{3}-2)}{-F_y(2\sqrt{3}+2,2\sqrt{3}-2)}
+		=\frac{3 \cdot 4^2 - 8(2\sqrt{3}-2)}{3 \cdot 4^2 + 8(2\sqrt{3}+2)} \\
+	=\frac{48+16-16\sqrt{3}}{48+16+16\sqrt{3}} \\
+	=\frac{64-16\sqrt{3}}{64+16\sqrt{3}} \\
+	=\frac{4-\sqrt{3}}{4+\sqrt{3}}\\\\
+	\text{よって直線の方程式は}\\
+	y - (2\sqrt{3}-2) = \frac{4-\sqrt{3}}{4+\sqrt{3}} (x - (2\sqrt{3}+2))\\
+	= \frac{(4-\sqrt{3})^2}{(4+\sqrt{3})(4-\sqrt{3})}x-\frac{(4-\sqrt{3})(2\sqrt{3}+2)}{4+\sqrt{3}}+(2\sqrt{3}-2)\\
+	= \frac{16+3-8\sqrt{3}}{16-3}x-\frac{2+6\sqrt{3}}{4+\sqrt{3}}+\frac{-2+6\sqrt{3}}{4+\sqrt{3}}\\
+	=\frac{19-8\sqrt{3}}{13}x-\frac{2+6\sqrt{3}+2-6\sqrt{3}}{4+\sqrt{3}}\\
+	=\frac{19-8\sqrt{3}}{13}x-\frac{4}{4+\sqrt{3}}
+\end{gather*}
+\end{enumerate}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

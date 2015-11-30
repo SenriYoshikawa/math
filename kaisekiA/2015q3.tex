@@ -114,19 +114,19 @@
 	\end{array}  \right] \\
 \end{gather*}
 \item$ z = f(x,y) = e^{-x^2-y^2}$\begin{gather*}
-	f'(x,y) = e^{x^2-y^2} [-2x \ \ -2y] \\
-	= -2e^{x^2-y^2} [x \ \ y] \\
+	f'(x,y) = e^{-x^2-y^2} [-2x \ \ -2y] \\
+	= -2e^{-x^2-y^2} [x \ \ y] \\
 	f''(x,y) = 
 	\left[    \begin{array}{c}
 		x \\
 		y \\
 	\end{array}  \right] 
-	-2e^{x^2-y^2} [-2x \ \ -2y] -2e^{x^2-y^2}
+	-2e^{-x^2-y^2} [-2x \ \ -2y] -2e^{-x^2-y^2}
 	\left[    \begin{array}{cc}
 		1 & 0 \\
 		0 &  1\\
 	\end{array}  \right] \\
-	= -2e^{x^2-y^2} \left\{
+	= -2e^{-x^2-y^2} \left\{
 	\left[    \begin{array}{cc}
 		-2x^2 & -2xy \\
 		-2xy &  -2y^2\\
@@ -136,7 +136,7 @@
 		0 &  1\\
 	\end{array}  \right] 
 	\right\} \\
-	= -2e^{x^2-y^2}
+	= -2e^{-x^2-y^2}
 	\left[    \begin{array}{cc}
 		1-2x^2 & -2xy \\
 		-2xy &  1-2y^2\\
@@ -167,7 +167,7 @@
 	=\frac{4-\sqrt{3}}{4+\sqrt{3}}\\\\
 	\text{よって直線の方程式は}\\
 	y - (2\sqrt{3}-2) = \frac{4-\sqrt{3}}{4+\sqrt{3}} (x - (2\sqrt{3}+2))\\
-	= \frac{(4-\sqrt{3})^2}{(4+\sqrt{3})(4-\sqrt{3})}x-\frac{(4-\sqrt{3})(2\sqrt{3}+2)}{4+\sqrt{3}}+(2\sqrt{3}-2)\\
+	y= \frac{(4-\sqrt{3})^2}{(4+\sqrt{3})(4-\sqrt{3})}x-\frac{(4-\sqrt{3})(2\sqrt{3}+2)}{4+\sqrt{3}}+(2\sqrt{3}-2)\\
 	= \frac{16+3-8\sqrt{3}}{16-3}x-\frac{2+6\sqrt{3}}{4+\sqrt{3}}+\frac{-2+6\sqrt{3}}{4+\sqrt{3}}\\
 	=\frac{19-8\sqrt{3}}{13}x-\frac{2+6\sqrt{3}+2-6\sqrt{3}}{4+\sqrt{3}}\\
 	=\frac{19-8\sqrt{3}}{13}x-\frac{4}{4+\sqrt{3}}
